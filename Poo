@@ -1,0 +1,15 @@
+Los descriptores de acceso get / set son muy útiles para controlar el acceso a los atributos de una clase. Es muy similar a crear un método o función pública para acceder a una propiedad privada y poder controlar los valores de entrada por ejemplo.
+
+Los métodos get y set, son simples métodos que usamos en las clases para mostrar (get) o modificar (set) el valor de un atributo. El nombre del método siempre sera get o set y a continuación el nombre del atributo, su modificador siempre es public ya que queremos mostrar o modificar desde fuera la clase. Por ejemplo, getNombre o setNombre.
+
+get ==se ejecuta cuando se lee la propiedad.
+set ==se ejecuta cuando se asigna un nuevo valor a la propiedad.
+
+De manera resumida, con setter asignas un valor y con getter lo recibe.
+El setter lo que hace es asignar un valor y el getter se encarga de recibir un valor.
+
+un constructor es un método especial que se utiliza para inicializar un objeto recién creado y asignarle valores iniciales a sus variables de instancia.
+un constructor es una función que se ejecuta automáticamente cuando se crea un objeto de una clase específica.
+Un constructor sirve para inicializar el objeto y establecer sus propiedades y valores predeterminados. Tiene el mismo nombre que la clase y no cuenta con ningún valor de retorno, ya que su función principal es inicializar el objeto y no devolver ningún valor.
+
+En un metodo statico(static) nose puede usar el this entonces para referenciar al atributo se pone el nombre de la clase ==> Automovil.colorPatente=colorPatente;
