@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class EjemploAutomovilArray {
     public static void main(String[] args) {
             Persona conductor_auto_1 = new Persona("luci", "Martinez");
@@ -10,13 +12,13 @@ public class EjemploAutomovilArray {
 
 
             Persona conductor_auto_2 = new Persona("Pato","Rodriguez");
-            Automovil auto_2 =  new Automovil("CHINA","WOLFVAGEN", Color.GRIS, new Motor(4.8,TipoMotor.DIESEL), new Estanque(50));
+            Automovil auto_2 =  new Automovil("Anastasia","WOLFVAGEN", Color.GRIS, new Motor(4.8,TipoMotor.DIESEL), new Estanque(50));
             auto_2.setConductor(conductor_auto_2);
             auto_2.setTipo(TipoAutomovil.PICKUP);
 
 
             Persona conductor_auto_3 = new Persona("Lalo", "Mena");
-            Automovil auto_3 = new Automovil("Rusia","price",Color.ROJO, new Motor(8.7, TipoMotor.BENCINA),new Estanque(50));
+            Automovil auto_3 = new Automovil("Rusia","BEBE",Color.ROJO, new Motor(8.7, TipoMotor.BENCINA),new Estanque(50));
 
             auto_3.setConductor(conductor_auto_3);
             auto_3.setColor(Color.Amarillo);
@@ -34,6 +36,7 @@ public class EjemploAutomovilArray {
             autos[2] = auto_3;
             autos[3] = auto_4;
 
+            Arrays.sort(autos);
             for(int i =0; i<autos.length; i++){
                     System.out.println(autos[i]);
             }
